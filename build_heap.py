@@ -49,7 +49,7 @@ def main():
     data = list(map(int, input().split()))
     
   if ("F" in readfrom) or ("f" in readfrom):
-    name = "test/"+input()
+    name = "tests/"+input()
     if not("a" in name):
       bool1 =True
       with open(name) as file:
