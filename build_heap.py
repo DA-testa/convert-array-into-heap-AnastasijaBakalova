@@ -4,9 +4,12 @@ def heap(data, nodes, i, swaps):
   if (2*i+1<nodes) and data[2*i+1]<data[s]:
     s=2*i+1
   if (2*i+2<nodes) and data[2*i+2]<data[s]:
-    s=2*i+1
+    s=2*i+2
   if i!=s:
     swaps.append((i,s))
+    c=data[s]
+    data[s]=data[i]
+    data[i]=c
     return s
   else:
     return i
