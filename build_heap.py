@@ -50,6 +50,7 @@ def main():
     
   if ("F" in readfrom) or ("f" in readfrom):
     name = input()
+    print(name)
     if not("a" in name):
       bool1 =True
       with open(name) as file:
